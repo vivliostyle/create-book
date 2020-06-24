@@ -1,8 +1,10 @@
 # Create Book
 
-> Create book built with Vivliostyle.
+> The fastest way to start writing book with Vivliostyle ecosystem.
 
-## Usage
+![screenshot](assets/screenshot.png)
+
+## Use
 
 ```bash
 yarn create book

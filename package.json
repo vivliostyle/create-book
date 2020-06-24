@@ -1,6 +1,6 @@
 {
   "name": "create-book",
-  "description": "Create book built with Vivliostyle.",
+  "description": "The fastest way to start writing book with Vivliostyle ecosystem.",
   "version": "0.1.0",
   "author": "Yasuaki Uechi <y@uechi.io>",
   "scripts": {

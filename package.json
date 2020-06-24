@@ -1,0 +1,26 @@
+{
+  "name": "create-book",
+  "description": "Create book built with Vivliostyle.",
+  "version": "0.0.0",
+  "author": "Yasuaki Uechi <y@uechi.io>",
+  "scripts": {
+    "build": "shx rm -rf dist/* && NODE_ENV=production tsc && shx chmod +x dist/cli.js",
+    "dev": "tsc -w",
+    "prepublish": "yarn build"
+  },
+  "dependencies": {
+    "create-whatever": "^5.0.0",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.5.7",
+    "shx": "^0.3.2",
+    "typescript": "^3.6.3"
+  },
+  "bin": "dist/cli.js",
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "license": "Apache-2.0"
+}

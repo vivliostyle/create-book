@@ -1,0 +1,9 @@
+{
+  "name": "{{kebab name}}",
+  "author": "{{contact}}",
+  "description": "{{name}}",
+  "license": "{{license}}",
+  "dependencies": {
+    "{{theme.name}}": "^{{theme.version}}"
+  }
+}

@@ -22,5 +22,17 @@
     "dist",
     "templates"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vivliostyle/create-book"
+  },
+  "bugs": {
+    "url": "https://github.com/vivliostyle/create-book/issues"
+  },
+  "homepage": "https://github.com/vivliostyle/create-book",
+  "keywords": [
+    "book",
+    "vivliostyle"
+  ],
   "license": "Apache-2.0"
 }

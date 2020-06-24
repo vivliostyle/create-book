@@ -7,5 +7,7 @@
 ## Use
 
 ```bash
-yarn create book
+yarn create book <dirname>
+# or
+npm create book <dirname>
 ```

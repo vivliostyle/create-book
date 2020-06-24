@@ -2,9 +2,12 @@
 
 {{description}}
 
-> Created by [create-book](https://github.com/vivliostyle/create-book).
+> created by [create-book](https://github.com/vivliostyle/create-book).
 
 ## References
 
-- Documentation <https://docs.vivliostyle.org>
-- GitHub <https://github.com/vivliostyle>
+- VFM <https://vivliostyle.github.io/vfm/#/vfm>
+- Vivliostyle CLI <https://github.com/vivliostyle/vivliostyle-cli#readme>
+- Awesome Vivliostyle <https://github.com/vivliostyle/awesome-vivliostyle#readme>
+- Vivliostyle <https://vivliostyle.org>
+- Vivliostyle (GitHub) <https://github.com/vivliostyle>

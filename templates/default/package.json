@@ -1,9 +1,15 @@
 {
   "name": "{{kebab name}}",
-  "author": "{{contact}}",
   "description": "{{name}}",
-  "license": "{{license}}",
+  "version": "0.0.0",
+  "author": "{{contact}}",
+  "scripts": {
+    "build": "vivliostyle build",
+    "preview": "vivliostyle preview"
+  },
   "dependencies": {
+    "@vivliostyle/cli": "^2.0.0",
     "{{theme.name}}": "^{{theme.version}}"
-  }
+  },
+  "license": "{{license}}"
 }

@@ -8,7 +8,7 @@
     "preview": "vivliostyle preview"
   },
   "dependencies": {
-    "@vivliostyle/cli": "^2.0.0",
+    "@vivliostyle/cli": "^3.0.0",
     "{{theme.name}}": "^{{theme.version}}"
   },
   "license": "{{license}}"

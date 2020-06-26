@@ -1,14 +1,28 @@
 #!/usr/bin/env node
 
+import chalk from 'chalk';
+import {AfterHookOptions, create} from 'create-whatever';
 import {resolve} from 'path';
-import {create} from 'create-whatever';
-
 import {listThemes} from './themes';
 
 const templateRoot = resolve(__dirname, '../templates');
-const caveat = `
+
+const caveat = ({name}: AfterHookOptions) => {
+  return `
+${chalk.gray('1.')} cd ${chalk.bold.green(name)}
+${chalk.gray('2.')} create and edit Markdown files
+${chalk.gray('3.')} edit ${chalk.bold.cyan(
+    'entry',
+  )} field in your ${chalk.bold.green('vivliostyle.config.js')}
+${chalk.gray('4.')} ${chalk.cyan('yarn build')} or ${chalk.cyan(
+    'npm run build',
+  )}
+
+See ${chalk.yellow('https://docs.vivliostyle.org')} for further information.
+
 🖋 Happy writing!
 `;
+};
 
 async function main() {
   const themes = (await listThemes()).map((result) => ({
@@ -18,7 +32,6 @@ async function main() {
 
   create('create-book', {
     templateRoot,
-    caveat,
     extra: {
       theme: {
         type: 'list',
@@ -27,6 +40,7 @@ async function main() {
         prompt: 'if-no-arg',
       },
     },
+    caveat,
   });
 }
 main();

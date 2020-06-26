@@ -9,7 +9,9 @@
     "prepublish": "yarn build"
   },
   "dependencies": {
-    "create-whatever": "^5.0.0",
+    "chalk": "^4.1.0",
+    "create-whatever": "^5.2.1",
+    "execa": "^4.0.2",
     "node-fetch": "^2.6.0"
   },
   "devDependencies": {

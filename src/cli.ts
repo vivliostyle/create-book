@@ -26,8 +26,13 @@ See ${chalk.yellow('https://docs.vivliostyle.org')} for further information.
 
 async function main() {
   const themes = (await listThemes()).map((result) => ({
-    name: result.package.name,
-    value: {name: result.package.name, version: result.package.version},
+    name: `${result.package.name} ${chalk.gray(
+      `- ${result.package.description}`,
+    )}`,
+    value: {
+      name: result.package.name,
+      version: result.package.version,
+    },
   }));
 
   create('create-book', {

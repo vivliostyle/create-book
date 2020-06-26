@@ -279,10 +279,10 @@ core-js@^2.4.0:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
   integrity sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==
 
-create-whatever@^5.2.1:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/create-whatever/-/create-whatever-5.2.1.tgz#dc28a22eb958515c013b55b43cef9130a3f5c3cf"
-  integrity sha512-Cji4g2OjVE05G+9BLV5VURcZEt03fXXJae6U6Di4rIg/SMiwdI2MVTsjsXQVrAWNptl5503ms7c9wONRYcGMJQ==
+create-whatever@^5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/create-whatever/-/create-whatever-5.3.0.tgz#d7f4e9a89ce554aad591caae147df36c18e3289b"
+  integrity sha512-d1VoWAzavmnxXb4anvU4c8MzHnlUBCJmJJAwyHkKbIzbxrJAJWVRprACL+LDZZ7CVcRXNMMHgop1du6vi53O1A==
   dependencies:
     "@types/inquirer" "^6.5.0"
     "@types/yargs-interactive" "^2.1.0"

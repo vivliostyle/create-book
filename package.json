@@ -4,13 +4,13 @@
   "version": "0.1.2",
   "author": "Yasuaki Uechi <y@uechi.io>",
   "scripts": {
-    "build": "shx rm -rf dist/* && NODE_ENV=production tsc && shx chmod +x dist/cli.js",
+    "build": "shx rm -rf lib/* && NODE_ENV=production tsc && shx chmod +x lib/cli.js",
     "dev": "tsc -w",
     "prepublish": "yarn build"
   },
   "dependencies": {
     "chalk": "^4.1.0",
-    "create-whatever": "^5.2.1",
+    "create-whatever": "^5.3.0",
     "execa": "^4.0.2",
     "node-fetch": "^2.6.0"
   },
@@ -19,9 +19,9 @@
     "shx": "^0.3.2",
     "typescript": "^3.6.3"
   },
-  "bin": "dist/cli.js",
+  "bin": "lib/cli.js",
   "files": [
-    "dist",
+    "lib",
     "templates"
   ],
   "repository": {

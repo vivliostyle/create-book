@@ -69,7 +69,7 @@ const KEYWORD = 'vivliostyle-theme';
 
 export async function listThemes(): Promise<Result[]> {
   const res = (await fetch(
-    `https://api.npms.io/v2/search?q=${KEYWORD}`,
+    `https://api.npms.io/v2/search?q=keywords:${KEYWORD}`,
   ).then((res) => res.json())) as SearchResponse;
   return res.results;
 }

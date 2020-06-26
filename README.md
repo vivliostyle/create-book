@@ -4,14 +4,14 @@
 
 > The fastest way to start writing book with Vivliostyle ecosystem.
 
-![screenshot](https://raw.githubusercontent.com/vivliostyle/create-book/master/assets/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/vivliostyle/create-book/master/assets/screencast.gif)
 
 ## Use
 
 ```bash
-yarn create book <dirname>
+yarn create book <directory>
 # or
-npm create book <dirname>
+npm create book <directory>
 ```
 
 ## Maintainer

@@ -1,5 +1,3 @@
-// TODO: get list of themes
-
 import fetch from 'node-fetch';
 
 export interface SearchResponse {

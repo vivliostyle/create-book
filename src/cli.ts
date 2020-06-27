@@ -35,13 +35,13 @@ async function main() {
     },
   }));
 
-  create('create-book', {
+  await create('create-book', {
     templateRoot,
     extra: {
       theme: {
         type: 'list',
         describe: 'choose theme',
-        choices: themes as any,
+        choices: themes,
         prompt: 'if-no-arg',
       },
     },

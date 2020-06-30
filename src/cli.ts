@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 
 import chalk from 'chalk';
-import {AfterHookOptions, create} from 'create-whatever';
-import {resolve} from 'path';
-import {listThemes} from './themes';
+import { AfterHookOptions, create } from 'create-create-app';
+import { resolve } from 'path';
+import { listThemes } from './themes';
 
 const templateRoot = resolve(__dirname, '../templates');
 
-const caveat = ({name}: AfterHookOptions) => {
+const caveat = ({ name }: AfterHookOptions) => {
   return `
 ${chalk.gray('1.')} cd ${chalk.bold.green(name)}
 ${chalk.gray('2.')} create and edit Markdown files

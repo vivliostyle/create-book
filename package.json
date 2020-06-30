@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "chalk": "^4.1.0",
-    "create-whatever": "^5.3.0",
+    "create-create-app": "^5.6.1",
     "execa": "^4.0.2",
     "node-fetch": "^2.6.0"
   },

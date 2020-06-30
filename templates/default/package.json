@@ -8,7 +8,7 @@
     "preview": "vivliostyle preview"
   },
   "dependencies": {
-    "@vivliostyle/cli": "canary",
+    "@vivliostyle/cli": "next",
     "{{theme.name}}": "^{{theme.version}}"
   },
   "license": "{{license}}"

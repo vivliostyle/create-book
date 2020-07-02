@@ -11,5 +11,6 @@
     "@vivliostyle/cli": "next",
     "{{theme.name}}": "^{{theme.version}}"
   },
-  "license": "{{license}}"
+  "license": "{{license}}",
+  "private": true
 }

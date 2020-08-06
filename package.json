@@ -1,7 +1,7 @@
 {
   "name": "create-book",
   "description": "The fastest way to start writing book with Vivliostyle ecosystem.",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": "Yasuaki Uechi <y@uechi.io>",
   "scripts": {
     "build": "shx rm -rf lib/* && NODE_ENV=production tsc && shx chmod +x lib/cli.js",

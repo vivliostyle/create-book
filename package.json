@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "chalk": "^4.1.0",
-    "create-create-app": "^5.7.0",
+    "create-create-app": "^6.0.0",
     "execa": "^4.0.3"
   },
   "devDependencies": {

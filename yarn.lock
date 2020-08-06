@@ -285,25 +285,25 @@ core-js@^2.4.0:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
   integrity sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==
 
-create-create-app@^5.7.0:
-  version "5.7.0"
-  resolved "https://registry.yarnpkg.com/create-create-app/-/create-create-app-5.7.0.tgz#f9dba5eeb767d79cded6852c5cb41947061785d9"
-  integrity sha512-aOG/HsIK92eoVI2i3z/TiYf1Zq6Cd+ZfkbbEFoyN7X4Ne9979bgIYEx7nc5EKvmPV2YKUpcxTwbbBDohwJJFTg==
+create-create-app@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/create-create-app/-/create-create-app-6.0.0.tgz#455a4897b6dd48c6488a0f694ad399c841b40242"
+  integrity sha512-tnRFsVAO9wT22p5iseY1t8y2NuYC0NxDB0NACSc0AI3lgt3FyXdTKbsSJPT3Lxd8MM9ZFbY+OG531LIaxCXbtQ==
   dependencies:
     "@types/inquirer" "^7.3.0"
     "@types/yargs-interactive" "^2.1.1"
     chalk "^4.1.0"
     cross-spawn "^7.0.3"
-    epicfail "^0.4.2"
+    epicfail "^1.0.0"
     execa "^4.0.3"
     gitconfig "^2.0.8"
     globby "^11.0.1"
     handlebars "^4.7.6"
-    inquirer "^7.3.2"
+    inquirer "^7.3.3"
     is-utf8 "^0.2.1"
     license.js "^3.1.2"
     slash "^3.0.0"
-    uuid "^8.2.0"
+    uuid "^8.3.0"
     yargs-interactive "^3.0.0"
 
 cross-spawn@^7.0.0, cross-spawn@^7.0.3:
@@ -362,10 +362,10 @@ envinfo@^7.5.1:
   resolved "https://registry.yarnpkg.com/envinfo/-/envinfo-7.7.2.tgz#098f97a0e902f8141f9150553c92dbb282c4cabe"
   integrity sha512-k3Eh5bKuQnZjm49/L7H4cHzs2FlL5QjbTB3JrPxoTI8aJG7hVMe4uKyJxSYH4ahseby2waUwk5OaKX/nAsaYgg==
 
-epicfail@^0.4.2:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/epicfail/-/epicfail-0.4.2.tgz#7ce5a12784242729aa9dde1cfcafdb780eba6743"
-  integrity sha512-4jfd8FLydt9cCTd/ospmkow8RyFi7eX9ge46GaJ/48S/RXe/PglvGB/t+08GHhOIZ6KEE3yhVO5krL9AhHJfAA==
+epicfail@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/epicfail/-/epicfail-1.0.0.tgz#adcb42a61ee7b6df206e01a0287d3486baa60710"
+  integrity sha512-7AqQSRzwN5NA9EX9BOyGf4ZOIEuGiguFYAr4mohMDA0tJsGOCkEXHfb1c0RlYOSwHIEO+laRzkobj//lJEaYng==
   dependencies:
     chalk "^4.1.0"
     envinfo "^7.5.1"
@@ -675,7 +675,7 @@ inquirer@^7.0.0:
     strip-ansi "^6.0.0"
     through "^2.3.6"
 
-inquirer@^7.3.2:
+inquirer@^7.3.3:
   version "7.3.3"
   resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-7.3.3.tgz#04d176b2af04afc157a83fd7c100e98ee0aad003"
   integrity sha512-JG3eIAj5V9CwcGvuOmoo6LB9kbAYT8HXffUl6memuszlwDC/qvFAJw49XJ5NROSFNPxp3iQg1GqkFhaY/CR0IA==
@@ -1203,10 +1203,10 @@ uglify-js@^3.1.4:
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.10.0.tgz#397a7e6e31ce820bfd1cb55b804ee140c587a9e7"
   integrity sha512-Esj5HG5WAyrLIdYU74Z3JdG2PxdIusvj6IWHMtlyESxc7kcDz7zYlYjpnSokn1UbpV0d/QX9fan7gkCNd/9BQA==
 
-uuid@^8.2.0:
-  version "8.2.0"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.2.0.tgz#cb10dd6b118e2dada7d0cd9730ba7417c93d920e"
-  integrity sha512-CYpGiFTUrmI6OBMkAdjSDM0k5h8SkkiTP4WAjQgDgNB1S3Ou9VBEvr6q0Kv2H1mMk7IWfxYGpMH5sd5AvcIV2Q==
+uuid@^8.3.0:
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.0.tgz#ab738085ca22dc9a8c92725e459b1d507df5d6ea"
+  integrity sha512-fX6Z5o4m6XsXBdli9g7DtWgAx+osMsRRZFKma1mIUsLCz6vRvv+pz5VNbyu9UEDzpMWulZfvpgb/cmDXVulYFQ==
 
 which-module@^2.0.0:
   version "2.0.0"

@@ -6,23 +6,27 @@
   "scripts": {
     "build": "shx rm -rf lib/* && NODE_ENV=production tsc && shx chmod +x lib/cli.js",
     "dev": "tsc -w",
-    "prepublishOnly": "yarn build"
-  },
-  "dependencies": {
-    "chalk": "^4.1.0",
-    "create-create-app": "^6.0.1",
-    "execa": "^4.0.3"
-  },
-  "devDependencies": {
-    "@types/node-fetch": "^2.5.7",
-    "shx": "^0.3.2",
-    "typescript": "^3.9.7"
+    "prepublishOnly": "npm run build",
+    "release": "release-it"
   },
   "bin": "lib/cli.js",
   "files": [
     "lib",
     "templates"
   ],
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "create-create-app": "^6.0.1",
+    "execa": "^4.0.3"
+  },
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^1.1.4",
+    "@types/node-fetch": "^2.5.7",
+    "release-it": "^13.6.6",
+    "shx": "^0.3.2",
+    "typescript": "^3.9.7"
+  },
+  "homepage": "https://github.com/vivliostyle/create-book",
   "repository": {
     "type": "git",
     "url": "https://github.com/vivliostyle/create-book"
@@ -30,10 +34,9 @@
   "bugs": {
     "url": "https://github.com/vivliostyle/create-book/issues"
   },
-  "homepage": "https://github.com/vivliostyle/create-book",
+  "license": "Apache-2.0",
   "keywords": [
     "book",
     "vivliostyle"
-  ],
-  "license": "Apache-2.0"
+  ]
 }

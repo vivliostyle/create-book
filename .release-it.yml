@@ -3,10 +3,9 @@ git:
   commitMessage: 'chore: release v${version}'
 github:
   release: true
-  releaseName: "v${version}"
+  releaseName: 'v${version}'
 hooks:
-  before:init: yarn test
+  before:init: npm test
 plugins:
   '@release-it/conventional-changelog': # https://github.com/release-it/conventional-changelog
     preset: angular
-

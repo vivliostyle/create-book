@@ -4,10 +4,12 @@
   "version": "0.1.5",
   "author": "Yasuaki Uechi <y@uechi.io>",
   "scripts": {
-    "build": "shx rm -rf lib/* && NODE_ENV=production tsc && shx chmod +x lib/cli.js",
-    "dev": "tsc -w",
-    "prepublishOnly": "npm run build",
-    "release": "release-it"
+    "build": "npm run tsup -- --minify",
+    "clean": "shx rm -rf lib",
+    "dev": "npm run tsup -- --watch",
+    "prepublishOnly": "npm run clean && npm run build",
+    "release": "release-it",
+    "tsup": "tsup src/cli.ts -d lib"
   },
   "bin": "lib/cli.js",
   "files": [
@@ -22,9 +24,18 @@
   "devDependencies": {
     "@release-it/conventional-changelog": "^1.1.4",
     "@types/node-fetch": "^2.5.7",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
     "release-it": "^13.6.6",
     "shx": "^0.3.2",
+    "tsup": "^3.6.1",
     "typescript": "^3.9.7"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   },
   "homepage": "https://github.com/vivliostyle/create-book",
   "repository": {

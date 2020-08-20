@@ -1,73 +1,73 @@
-import fetch from 'node-fetch';
+import fetch from 'node-fetch'
 
 export interface SearchResponse {
-  total: number;
-  results: Result[];
+  total: number
+  results: Result[]
 }
 
 export interface Result {
-  package: Package;
-  flags: Flags;
-  score: Score;
-  searchScore: number;
+  package: Package
+  flags: Flags
+  score: Score
+  searchScore: number
 }
 
 export interface Package {
-  name: string;
-  scope: string;
-  version: string;
-  description: string;
-  keywords: string[];
-  date: string;
-  links: Links;
-  author: Author;
-  publisher: Publisher;
-  maintainers: Maintainer[];
+  name: string
+  scope: string
+  version: string
+  description: string
+  keywords: string[]
+  date: string
+  links: Links
+  author: Author
+  publisher: Publisher
+  maintainers: Maintainer[]
 }
 
 export interface Links {
-  npm: string;
-  homepage: string;
-  repository: string;
-  bugs: string;
+  npm: string
+  homepage: string
+  repository: string
+  bugs: string
 }
 
 export interface Author {
-  name: string;
-  email: string;
-  username: string;
+  name: string
+  email: string
+  username: string
 }
 
 export interface Publisher {
-  username: string;
-  email: string;
+  username: string
+  email: string
 }
 
 export interface Maintainer {
-  username: string;
-  email: string;
+  username: string
+  email: string
 }
 
 export interface Flags {
-  unstable: boolean;
+  unstable: boolean
 }
 
 export interface Score {
-  final: number;
-  detail: Detail;
+  final: number
+  detail: Detail
 }
 
 export interface Detail {
-  quality: number;
-  popularity: number;
-  maintenance: number;
+  quality: number
+  popularity: number
+  maintenance: number
 }
 
-const KEYWORD = 'vivliostyle-theme';
+const KEYWORD = 'vivliostyle-theme'
 
 export async function listThemes(): Promise<Result[]> {
   const res = (await fetch(
-    `https://api.npms.io/v2/search?q=keywords:${KEYWORD}`,
-  ).then((res) => res.json())) as SearchResponse;
-  return res.results;
+    `https://api.npms.io/v2/search?q=keywords:${KEYWORD}`
+  ).then((res) => res.json())) as SearchResponse
+  return res.results
 }

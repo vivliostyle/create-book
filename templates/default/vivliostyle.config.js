@@ -21,6 +21,7 @@ module.exports = {
   //     format: 'webbook',
   //   },
   // ],
+  // workspaceDir: '.vivliostyle', // directory which is saved intermediate files.
   // toc: true, // whether generate and include toc.html or not (does not affect manifest.json), default to `true`. if `string` given, use it as a custom toc.html.
   // cover: './cover.png', // cover image. default to undefined.
 }

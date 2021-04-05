@@ -1,7 +1,7 @@
 {
   "name": "create-book",
   "description": "The fastest way to start writing book with Vivliostyle ecosystem.",
-  "version": "0.1.6",
+  "version": "0.2.1",
   "author": "Yasuaki Uechi <y@uechi.io>",
   "scripts": {
     "test": "echo \"Test is not implemented\"",

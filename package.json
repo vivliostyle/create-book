@@ -4,6 +4,7 @@
   "version": "0.1.6",
   "author": "Yasuaki Uechi <y@uechi.io>",
   "scripts": {
+    "test": "echo \"Test is not implemented\"",
     "build": "npm run tsup -- --minify",
     "clean": "shx rm -rf lib",
     "dev": "npm run tsup -- --watch",

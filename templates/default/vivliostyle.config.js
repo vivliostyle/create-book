@@ -1,5 +1,5 @@
 module.exports = {
-  title: '{{name}}', // populated into `manifest.json`, default to `title` of the first entry or `name` in `package.json`.
+  title: '{{name}}', // populated into `publication.json`, default to `title` of the first entry or `name` in `package.json`.
   author: '{{contact}}', // default to `author` in `package.json` or undefined.
   // language: 'ja', // default to undefined.
   // size: 'A4', // paper size.
@@ -9,7 +9,7 @@ module.exports = {
     // {
     //   path: 'epigraph.md',
     //   title: 'Epigraph', // title can be overwritten (entry > file),
-    //   theme: '@vivliostyle/theme-whatever', // theme can be set indivisually. default to the root `theme`.
+    //   theme: '@vivliostyle/theme-whatever', // theme can be set individually. default to the root `theme`.
     // },
     // 'glossary.html', // html can be passed.
   ], // `entry` can be `string` or `object` if there's only single markdown file.

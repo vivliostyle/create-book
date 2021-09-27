@@ -34,7 +34,7 @@
     "build": "npm run tsup -- --minify",
     "clean": "shx rm -rf lib",
     "dev": "npm run tsup -- --watch",
-    "prepublishOnly": "npm run clean && npm run build",
+    "prepare": "npm run clean && npm run build",
     "release": "release-it",
     "release:dry": "release-it --dry-run",
     "tsup": "tsup src/cli.ts -d lib"

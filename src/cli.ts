@@ -41,7 +41,10 @@ async function main() {
       theme: {
         type: 'list',
         describe: 'choose theme',
-        choices: themes,
+        // TODO:
+        // The type is `string[]`, but doing so results in a `405` error.
+        // Need other properties as `create-create-app` or `yargs-interactive`.
+        choices: themes as any,
         prompt: 'if-no-arg',
       },
     },

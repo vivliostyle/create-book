@@ -1,0 +1,29 @@
+{
+  "name": "examples-create-book",
+  "description": "Examples for create-book.",
+  "version": "1.0.0",
+  "author": "Vivliostyle Foundation",
+  "license": "Apache-2.0",
+  "private": true,
+  "engines": {
+    "node": ">= 12"
+  },
+  "keywords": [
+    "book",
+    "vivliostyle"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vivliostyle/create-book"
+  },
+  "homepage": "https://github.com/vivliostyle/create-book",
+  "bugs": {
+    "url": "https://github.com/vivliostyle/create-book/issues"
+  },
+  "scripts": {
+    "start": "create-book sample"
+  },
+  "dependencies": {
+    "create-book": "^0.3.3"
+  }
+}

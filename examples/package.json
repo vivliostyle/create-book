@@ -24,6 +24,6 @@
     "start": "create-book sample"
   },
   "dependencies": {
-    "create-book": "file:create-book-0.3.3.tgz"
+    "create-book": "^0.3.3"
   }
 }

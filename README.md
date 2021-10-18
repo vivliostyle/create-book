@@ -6,8 +6,7 @@
 
 # Create Book
 
-<a href="https://npmjs.com/package/create-book"><img src="https://flat.badgen.net/npm/v/create-book" alt="npm badge" /></a>
-<a href="https://npmjs.com/package/create-book"><img src="https://flat.badgen.net/npm/dt/create-book" alt="npm badge" /></a>
+[![npm badge](https://flat.badgen.net/npm/v/create-book)](https://npmjs.com/package/create-book) [![downloads](https://flat.badgen.net/npm/dt/create-book)]()
 
 Just run `yarn create book` and start writing your book!
 
@@ -23,4 +22,5 @@ npm create book <directory>
 
 ## Maintainer
 
-[uetchy](https://github.com/uetchy)
+- [akabeko](https://github.com/akabekobeko)
+- [uetchy](https://github.com/uetchy)

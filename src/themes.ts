@@ -66,8 +66,12 @@ export interface Detail {
 const KEYWORD = 'vivliostyle-theme'
 
 export async function listThemes(): Promise<Result[]> {
-  const res = (await fetch(
-    `https://api.npms.io/v2/search?q=keywords:${KEYWORD}`
-  ).then((res) => res.json())) as SearchResponse
-  return res.results
+  const res = await fetch(`https://api.npms.io/v2/search?q=keywords:${KEYWORD}`)
+  if (res.ok) {
+    return ((await res.json()) as SearchResponse).results
+  } else {
+    throw new Error(
+      `Failed to get the theme information from https://api.npms.io, HTTP status code: "${res.status}"`
+    )
+  }
 }

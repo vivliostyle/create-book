@@ -23,7 +23,6 @@ export const restoreGitIgnore = (packageDir: string): boolean => {
   const newPath = path.join(packageDir, FILENAME_GITIGNORE)
   fs.renameSync(oldPath, newPath)
 
-  console.log(`oldPath = "${oldPath}"\nnewPath = "${newPath}"`)
   if (fs.existsSync(newPath)) {
     console.log('Restore .gitignore')
   } else {

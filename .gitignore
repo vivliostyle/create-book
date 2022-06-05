@@ -1,11 +1,3 @@
-/lib
-package-lock.json
-yarn.lock
-
-# Created by https://www.gitignore.io/api/node
-# Edit at https://www.gitignore.io/?templates=node
-
-### Node ###
 # Logs
 logs
 *.log
@@ -13,6 +5,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+.pnpm-debug.log*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
@@ -49,8 +42,8 @@ build/Release
 node_modules/
 jspm_packages/
 
-# TypeScript v1 declaration files
-typings/
+# Snowpack dependency directory (https://snowpack.dev/)
+web_modules/
 
 # TypeScript cache
 *.tsbuildinfo
@@ -61,6 +54,15 @@ typings/
 # Optional eslint cache
 .eslintcache
 
+# Optional stylelint cache
+.stylelintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
 # Optional REPL history
 .node_repl_history
 
@@ -70,24 +72,40 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variables file
+# dotenv environment variable files
 .env
-.env.test
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
+.parcel-cache
 
-# next.js build output
+# Next.js build output
 .next
+out
 
-# nuxt.js build output
+# Nuxt.js build / generate output
 .nuxt
+dist
 
-# react / gatsby 
-public/
+# Gatsby files
+.cache/
+# Comment in the public line in if your project uses Gatsby and not Next.js
+# https://nextjs.org/blog/next-9-1#public-directory-support
+# public
 
 # vuepress build output
 .vuepress/dist
+
+# vuepress v2.x temp and cache directory
+.temp
+.cache
+
+# Docusaurus cache and generated files
+.docusaurus
 
 # Serverless directories
 .serverless/
@@ -98,4 +116,20 @@ public/
 # DynamoDB Local files
 .dynamodb/
 
-# End of https://www.gitignore.io/api/node
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Project
+package-lock.json
+yarn.lock
+lib/

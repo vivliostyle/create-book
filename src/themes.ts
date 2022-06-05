@@ -1,4 +1,5 @@
 import fetch from 'node-fetch'
+import chalk from 'chalk'
 
 export interface SearchResponse {
   total: number
@@ -63,6 +64,29 @@ export interface Detail {
   maintenance: number
 }
 
+/**
+ * Vovliostyle Theme information for create-book CLI.
+ */
+export type ThemeInfo = {
+  /**
+   * Item name on the theme list.
+   */
+  name: string
+  /**
+   * Item value on the theme list.
+   */
+  value: {
+    /**
+     * Name of the npm package.
+     */
+    name: string
+    /**
+     * Version of the npm package.
+     */
+    version: string
+  }
+}
+
 const KEYWORD = 'vivliostyle-theme'
 
 export async function listThemes(): Promise<Result[]> {
@@ -74,4 +98,20 @@ export async function listThemes(): Promise<Result[]> {
       `Failed to get the theme information from https://api.npms.io, HTTP status code: "${res.status}"`
     )
   }
+}
+
+/**
+ * Get the list of Vovliostyle Theme information for create-book CLI.
+ * @returns Information list.
+ */
+export const getThemeInfo = async (): Promise<ThemeInfo[]> => {
+  return (await listThemes()).map((result) => ({
+    name: `${result.package.name} ${chalk.gray(
+      `- ${result.package.description}`
+    )}`,
+    value: {
+      name: result.package.name,
+      version: result.package.version,
+    },
+  }))
 }

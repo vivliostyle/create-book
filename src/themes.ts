@@ -3,7 +3,7 @@ import chalk from 'chalk'
 
 export interface SearchResponse {
   total: number
-  results: Result[]
+  objects: Result[]
 }
 
 export interface Result {
@@ -90,12 +90,14 @@ export type ThemeInfo = {
 const KEYWORD = 'vivliostyle-theme'
 
 export async function listThemes(): Promise<Result[]> {
-  const res = await fetch(`https://api.npms.io/v2/search?q=keywords:${KEYWORD}`)
+  const res = await fetch(
+    `https://registry.npmjs.org/-/v1/search?text=keywords:${KEYWORD}`
+  )
   if (res.ok) {
-    return ((await res.json()) as SearchResponse).results
+    return ((await res.json()) as SearchResponse).objects
   } else {
     throw new Error(
-      `Failed to get the theme information from https://api.npms.io, HTTP status code: "${res.status}"`
+      `Failed to get the theme information from https://registry.npmjs.org, HTTP status code: "${res.status}"`
     )
   }
 }

@@ -1,3 +1,9 @@
+This repository has been discontinued and merged into Vivliostyle CLI. The create-book functionality now serves as an alias for Vivliostyle CLI's `create` command.
+
+For the latest development updates, please visit: https://github.com/vivliostyle/vivliostyle-cli/tree/HEAD/packages/create-book
+
+---
+
 ![Logo](https://raw.githubusercontent.com/vivliostyle/create-book/master/assets/cover.jpg)
 
 <div align="center">
